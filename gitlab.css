@@ -1,4 +1,12 @@
-*
+
+/*
+main background     #1c1e22
+second background   #252525
+grey        #808080
+dark-grey   #111111
+*/
+
+*, h1, h2, h3, h4, h5, h6
 {
     background: none;
     color: white;
@@ -14,28 +22,36 @@ body, body.navless
 header.navbar-empty,
 header.navbar-gitlab {
     background-color: #1c1e22;
-    border-bottom: 1px solid #696969;
+    border-bottom: 1px solid #808080;
 }
 
 header.navbar-gitlab .side-nav-toggle {
     background-color: #737373;
+    border-radius: 6px;
 }
 
 header.navbar-gitlab .side-nav-toggle:hover {
-    background-color: #656565;
+    background-color: #808080;
 }
 
 header .header-content .title a {
     color: white;
 }
 header .header-content .title a:hover {
-    color: #aaaaaa;
+    color: #808080;
 }
 
 .form-control, .search form,
-.dropdown-toggle, .dropdown-menu-toggle {
-    background-color: #737373;
+.dropdown-toggle,
+.dropdown-menu-toggle {
+    background-color: #1c1e22;
     color: white;
+}
+
+/* ---Footer--- */
+.devise-layout-html body .footer-container,
+.devise-layout-html body hr.footer-fixed {
+    background: none;
 }
 
 /* ---Nav Bar : Right menu--- */
@@ -48,11 +64,66 @@ header.navbar-gitlab .container-fluid .nav>li>a:active {
     background-color: #1c1e22;
     color: white;
 }
+.dropdown-menu,
+.dropdown-menu-nav {
+    background-color: #1c1e22;
+}
+.dropdown-menu a,
+.dropdown-menu-nav a {
+    color: white;
+}
+.dropdown-menu a:hover,
+.dropdown-menu a:focus,
+.dropdown-menu a.is-focused,
+.dropdown-menu-nav a:hover,
+.dropdown-menu-nav a:focus,
+.dropdown-menu-nav a.is-focused {
+    background-color: #555555;
+    color: white;
+}
 
 /* ---Login Page--- */
+.new-session-forms-container > div {
+    background-color: #252525;
+}
+
 .login-page .new-session-tabs
 {
-    box-shadow: 0 0 0 1px #696969;
+    box-shadow: 0 0 0 1px #808080;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus,
+.login-page .new-session-tabs li.active a {
+    background: none;
+    color: white;
+}
+
+.login-page .form-control:active,
+.login-page .search form:active,
+.search .login-page form:active,
+.login-page .form-control:focus,
+.login-page .common-note-form .md-area.is-focused,
+.common-note-form .login-page .md-area.is-focused,
+.login-page .search form:focus,
+.search .login-page form:focus,
+.login-page .search.search-active form,
+.search.search-active .login-page form {
+    background-color: #1c1e22;
+}
+
+.light, .description-block {
+    color: white;
+}
+
+.btn {
+    color: white;
+    background-color: #1c1e22;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #3f3f3f;
+    color: white;
 }
 
 /* ---Nav Side Bar--- */
@@ -62,5 +133,20 @@ header.navbar-gitlab .container-fluid .nav>li>a:active {
 }
 body.ui_graphite .page-with-sidebar .nav-sidebar li a .count
 {
-    background-color: #656565;
+    background-color: #808080;
+}
+
+/* ---Projets page ---*/
+.content-wrapper .container-fluid {
+    background-color: #1c1e22;
+}
+.nav-links li.active a,
+.nav-links li a {
+    color: white;
+}
+.nav-links li a:hover,
+.nav-links li a:active,
+.nav-links li a:focus {
+    color: white;
+    background-color: #555555;
 }
